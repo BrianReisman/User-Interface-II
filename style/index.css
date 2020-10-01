@@ -1,1 +1,196 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Brian's code below here */
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@1,200&display=swap');
+
+
+*{
+    /* border: 1px solid black; */
+    margin: 0px;
+    font-size: 16px;
+    background: #C9DCB3;
+    font-family: 'Piazzolla', serif;
+}
+
+/* HEADER */
+
+body{
+    margin: 1vh 5vw;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    margin: 1vh 5vw;
+}
+
+h1, h2, p{
+    display: flex;
+    justify-content: center;
+    margin: 1vh 5vw;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+header p {
+    margin: 1vh 5vw;
+}
+
+p{
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1vh 5vw;
+    flex-shrink: 5;
+}
+
+a {
+    text-decoration: none;
+    border: 1.5px solid black;
+    padding: 1vh 3vh;
+    margin: 0 3vw;
+    font-size: 1.2rem;
+    background:#555358;
+    color:#C6CA53;
+}
+
+a:hover{
+    background:#C6CA53;
+    color:#555358;
+}
+
+/* BODY */
+
+.bigimg{
+    background: url(https://picsum.photos/1800/750);
+    height: 50vh; /*I want this to auto match the width of 90vw which is 100vw - 5 - 5 from both sides of the margin*/
+    /* width: 90vw; */
+    margin: 2vh 5vw;
+    background-repeat: no-repeat;
+}
+
+body .gallery{
+    display: flex;
+    margin: 2vh 5vw;
+}
+
+.gallery .img{
+    height: 40vh;
+    width: 15%;
+    /* margin: 0 1vw; */
+    /* justify-content: space-evenly; */
+}
+
+.gallery .img:nth-of-type(1){
+    background-image: url(https://source.unsplash.com/random);
+    flex-grow: 1;
+    flex-basis: 10vw;
+}
+.gallery .img:nth-of-type(2){
+    background-image: url(https://picsum.photos/520/381);
+    flex-grow: 2;
+    flex-basis: 20vw;
+}
+.gallery .img:nth-of-type(3){
+    background-image: url(https://picsum.photos/531/380);
+    flex-grow: 3;
+    flex-basis: 30vw;
+}
+.gallery .img:nth-of-type(4){
+    background-image: url(https://picsum.photos/521/380);
+    flex-grow: 4;
+    flex-basis: 40vw;
+}
+
+.gallery p{
+    align-items: center;
+    text-align: center;
+    word-wrap: break-word;
+    padding: 2vh;
+    background: 
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    margin: 1vh 5vw;
+    padding: 1vh;
+    justify-content: center;
+    align-item: center;
+    background-color: peru;
+}
+
+footer div{
+    display: flex;
+    height: auto;
+    padding: 5px;
+    justify-content: center;
+    align-item: center;
+    background-color: transparent;
+}
+
+footer div a {
+    font-size: 2rem;
+    background-color: black;
+}
+
