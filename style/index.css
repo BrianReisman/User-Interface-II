@@ -54,7 +54,7 @@ table {
 
 
 *{
-    /* border: 1px solid black; */
+    border: 1px solid black;
     margin: 0px;
     font-size: 16px;
     background: #C9DCB3;
@@ -65,12 +65,16 @@ table {
 
 body{
     margin: 1vh 5vw;
+    display: flex; /* delete this */
+    flex-direction: column;
 }
 
 header{
     display: flex;
     flex-direction: column;
-    margin: 1vh 5vw;
+    margin: 1vh 20vw;
+    /* width: 50vw; */
+    align-items: center;
 }
 
 h1, h2, p{
@@ -185,7 +189,7 @@ footer div{
     height: auto;
     padding: 5px;
     justify-content: center;
-    align-item: center;
+    /* align-items: center; */
     background-color: transparent;
 }
 
@@ -193,4 +197,63 @@ footer div a {
     font-size: 2rem;
     background-color: black;
 }
+
+
+
+/* NOW page */
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.container section.subcontainer{
+    display: flex;
+    justify-content: center;
+    /* height: 100%; */
+    /* width: 100%; */
+    /* padding: 1vh; */
+    margin: 1vh 5vw;
+}
+.container div {
+    /* flex-wrap: wrap; */
+    height: 25vh;
+    width: 25vh;
+    margin: 0 5vh;
+    /* background: lightgreen; */
+    flex-direction: row;
+}
+
+div.nowbox1, div.nowbox2, div.nowbox3, div.nowbox4{
+    font-family: 'Piazzolla', serif;
+    font-size: 3rem;
+    transition: 1s;
+    text-align: center;
+}
+
+
+div.nowbox1{
+    background-color: #FFA62B;
+}
+div.nowbox2{
+    background: #EDE7E3;
+}
+div.nowbox3{
+    background: #82C0CC;
+}
+div.nowbox4{
+    background: #489FB5;
+ }
+
+div.nowbox1:hover{
+    background: url(https://picsum.photos/531/380);
+}
+div.nowbox2:hover{
+    background: url(https://picsum.photos/532/380);
+}
+div.nowbox3:hover{
+    background: url(https://picsum.photos/533/380);
+}
+div.nowbox4:hover{
+    background: url(https://picsum.photos/534/380);
+ }
+
 
